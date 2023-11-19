@@ -40,7 +40,7 @@ with gr.Blocks() as demo:
     gr.Markdown("""<h1><center>Chatbot universe.ai</center></h1>""")
     chatbot = gr.Chatbot()
     state = gr.State()
-    text = gr.Textbox(placeholder="Explore the wonders of the plants! Ask me anything", key="Enter")  # Adjust width
+    text = gr.Textbox(placeholder="Explore the wonders of the plants! Ask me anything")  # Adjust width
     submit = gr.Button("SEND")
     submit.click(my_chatbot, inputs=[text, state], outputs=[chatbot, state])
 
