@@ -37,7 +37,7 @@ def my_chatbot(input, history):
     return history, history
 
 with gr.Blocks() as demo:
-    gr.Markdown("""<h1><center>Chatbot universe.ai</center></h1>""")
+    gr.Markdown("""<h1><center>Plant Chatbot</center></h1>""")
     chatbot = gr.Chatbot()
     state = gr.State()
     text = gr.Textbox(placeholder="Explore the wonders of the plants! Ask me anything")  # Adjust width
